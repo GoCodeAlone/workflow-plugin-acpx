@@ -1,0 +1,32 @@
+{
+  "name": "workflow-plugin-acpx",
+  "version": "0.0.0",
+  "description": "ACPX durable bundle validation and summaries",
+  "author": "GoCodeAlone",
+  "license": "MIT",
+  "type": "external",
+  "tier": "community",
+  "private": false,
+  "minEngineVersion": "0.85.1",
+  "keywords": [
+    "acpx",
+    "acp",
+    "agent",
+    "replay",
+    "flow",
+    "archive"
+  ],
+  "homepage": "https://github.com/GoCodeAlone/workflow-plugin-acpx",
+  "repository": "https://github.com/GoCodeAlone/workflow-plugin-acpx",
+  "capabilities": {
+    "configProvider": false,
+    "moduleTypes": [],
+    "stepTypes": [
+      "acpx.bundle_validate",
+      "acpx.bundle_summary",
+      "acpx.flow_validate"
+    ],
+    "triggerTypes": []
+  },
+  "contracts": []
+}
