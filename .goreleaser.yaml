@@ -18,7 +18,7 @@ builds:
 
 archives:
   - id: default
-    format: tar.gz
+    formats: [tar.gz]
     files:
       - plugin.json
 
@@ -27,4 +27,3 @@ checksum:
 
 release:
   draft: false
-
