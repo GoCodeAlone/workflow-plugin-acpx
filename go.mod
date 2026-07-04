@@ -4,13 +4,13 @@ go 1.26.4
 
 require (
 	github.com/GoCodeAlone/acpx-go v0.2.1
+	github.com/GoCodeAlone/modular v1.13.4
 	github.com/GoCodeAlone/workflow v0.85.1
 )
 
 require (
 	github.com/BurntSushi/toml v1.6.0 // indirect
 	github.com/GoCodeAlone/go-plugin v1.7.0 // indirect
-	github.com/GoCodeAlone/modular v1.13.4 // indirect
 	github.com/GoCodeAlone/yaegi v0.17.2 // indirect
 	github.com/cloudevents/sdk-go/v2 v2.16.2 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
@@ -29,6 +29,9 @@ require (
 	github.com/ncruces/go-strftime v1.0.0 // indirect
 	github.com/oklog/run v1.2.0 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
+	github.com/rogpeppe/go-internal v1.14.1 // indirect
+	github.com/stretchr/objx v0.5.3 // indirect
+	go.opentelemetry.io/otel/sdk/metric v1.44.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.28.0 // indirect
 	golang.org/x/net v0.56.0 // indirect

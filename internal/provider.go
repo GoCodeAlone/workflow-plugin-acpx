@@ -1,10 +1,6 @@
 package internal
 
-import (
-	"fmt"
-
-	"github.com/GoCodeAlone/workflow/plugin/external/sdk"
-)
+import "github.com/GoCodeAlone/workflow/plugin/external/sdk"
 
 // Version is injected by release builds.
 var Version = "dev"
@@ -29,14 +25,13 @@ func (p *Provider) Manifest() sdk.PluginManifest {
 
 // StepTypes implements sdk.StepProvider.
 func (p *Provider) StepTypes() []string {
-	return []string{
-		"acpx.bundle_validate",
-		"acpx.bundle_summary",
-		"acpx.flow_validate",
-	}
+	return stepTypes()
 }
 
 // CreateStep implements sdk.StepProvider.
 func (p *Provider) CreateStep(typeName, name string, config map[string]any) (sdk.StepInstance, error) {
-	return nil, fmt.Errorf("unknown step type: %s", typeName)
+	if !isStepType(typeName) {
+		return nil, unknownStepType(typeName)
+	}
+	return &sdkStep{stepType: typeName, name: name, config: cloneConfig(config)}, nil
 }
